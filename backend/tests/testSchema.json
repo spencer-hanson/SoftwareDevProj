@@ -1,0 +1,28 @@
+{
+	"title" : "Response",
+	"description" : "Response description",
+	"type" : "object",
+	"required" : ["request", "username", "atoken", "status", "data"],
+	"properties" : {
+		"request" : {
+			"description" : "Request status, valid or invalid",
+			"type" : "string"
+		},
+		"username": {
+			"description" : "Username of a given request, invalid gives none",
+			"type" : "string"
+		},
+		"atoken" : {
+			"description" : "Spotify Auth Token of a given request, invalid gives none",
+			"type" : "string"
+		},
+		"status" : {
+			"description" : "Status returned by server, none, started, working, or done",
+			"type" : "string"
+		},
+		"data" : {
+			"description" : "Data returned by the server. If the status is done, the data will be a spotify uri",
+			"type" : "string"
+		}
+	}
+}

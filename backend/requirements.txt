@@ -1,0 +1,10 @@
+json-spec
+requests
+pylast
+bs4
+spotipy
+flask
+lxml
+six
+readchar
+blessings

@@ -1,0 +1,113 @@
+.container-fluid {
+    width: 50%;
+!important;
+    margin: 0;
+}
+
+.h1, h1 {
+    color: white;
+}
+
+#generate_playlist_btn {
+    display:block;
+    margin: 0 auto;
+}
+
+/*.btn-t9{*/
+/*background-color: #FFFF00;*/
+/*font-size: 1.5em;*/
+/*color: black;*/
+/*padding: 0.5em;*/
+/*margin-top: 76px;*/
+/*margin-bottom: 10px;*/
+/*}*/
+
+/*.btn-t9:hover{*/
+/*color:white;*/
+/*background-color: #AC630C;*/
+/*color: white;*/
+/*margin-top: 76px;*/
+/*margin-bottom: 10px;*/
+/*}*/
+
+/**************/
+/*Profile Page*/
+/**************/
+/*#profileContainer {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 20em;*/
+/*}*/
+
+#home-background-image {
+    width: 100%;
+    height: 20em;
+    background: url('../assets/profile_background.png') center center no-repeat;
+}
+
+#overlay_image {
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background: url('../assets/fake_profile.jpg');
+    border-radius: 50%;
+    border: white solid 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#profiledata {
+    color: white;
+    padding-top: 50px;
+}
+
+#particles-js {
+    /*position: absolute;*/
+}
+
+.container {
+    position: absolute;
+    width: auto;
+}
+
+.btn-t9{
+    background-color: #A0A0A0;
+    font-size: 1.5em;
+    color: white;
+    /*position: absolute;*/
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.btn-t9:hover{
+    color:white;
+    background-color: #3c3c3c;
+    color: white;
+}
+
+.playlistBox {
+    margin: 3em;
+    width: 200px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.friends {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: white solid 1px;
+}
+
+.mar {
+    margin: 2em;
+}

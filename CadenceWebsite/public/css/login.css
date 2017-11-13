@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #060606;
+    font-family: 'Lato', sans-serif;
+}form
+
+a {
+    margin: 5em;
+}
+
+/*#loggedin{*/
+     /*display: none;*/
+ /*}*/
+
+.placeholder {
+    color:white;
+}
+/*.form-signin {*/
+    /*color:white;*/
+/*}*/
+/*#quickstart-password-reset {*/
+    /*text-align: center;*/
+    /*display: block;*/
+    /*margin: 0 auto;*/
+    /*color: #7333b7;*/
+/*}*/
+/*Login form*/
+.form-signin {
+    max-width: 412px;
+    padding: 15px;
+    margin: 0 auto;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #2f2f2f inset !important;
+    -webkit-box-color:white;!important;
+}
+
+
+.btn-t9{
+    background-color: #A0A0A0;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    margin-top: 23em;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.btn-t9:hover{
+    color:white;
+    background-color: #3c3c3c;
+    color: white;
+}
+
+.logo-main {
+    margin: 0 auto;
+    height: 300px;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    border-top: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-left: none;
+    border-right:none;
+    border-bottom: solid 2px white;
+    border-radius: 0px;
+}
+.form-signin input[type="password"] {
+    border-top: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-left: none;
+    border-right:none;
+    border-bottom: solid 2px white;
+    border-radius: 0px;
+}
+

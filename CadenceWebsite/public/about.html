@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Cadence</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen"/>
+
+	<!-- Custom CSS -->
+	<link href="css/sb-admin.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/custom.scss" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/custom.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/home.css" media="screen"/>
+
+	<!-- Morris Charts CSS -->
+	<link href="css/plugins/morris.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="js/index.html" type="text/html"/>
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Morris Charts JavaScript -->
+	<!--<script src="js/plugins/morris/raphael.min.js"></script>-->
+	<!--<script src="js/plugins/morris/morris.min.js"></script>-->
+	<!--<script src="js/plugins/morris/morris-data.js"></script>-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
+	<script type="text/javascript"></script>
+
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js"></script>
+
+	<!--Less-->
+	<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+
+    <style>
+    body {
+      color: #f5f6f7;
+	}
+  p {
+    font-size: 16px;
+  }
+
+  .margin {
+	  margin-bottom: 45px;
+  }
+
+  .bg-1 { 
+      background-color: #000000; /* Black */
+      color: #ffffff;
+  }
+
+  .bg-2 { 
+      background-color: #dd2c00 ; /* Black/Gray */
+      color: #f5f6f7;
+	}
+  	.bg-3 {
+		background-color: #ffffff; /* White */
+		color: #555555;
+	}
+
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 61px;
+    margin-bottom: 16px;
+}
+
+  .container-fluid {
+    padding-top: 21px;
+    padding-bottom: 51px;
+    width: 100%;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-brand logo-dash"></div>
+			<a class="navbar-brand" href="home.html">Cadence</a>
+		</div>
+		<ul class="nav navbar-right top-nav pull-right">
+			<li>
+				<a href="/login"><i class="fa fa-fw fa-bar-chart-o"></i>Playlists</a>
+			</li>
+			<li>
+				<a href="d3_test.html"><i class="fa fa-fw fa-bar-chart-o"></i>Visualization</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i>About</a>
+			</li>
+
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" id="user_id" data-toggle="dropdown"><i class="fa fa-user"></i><b
+						class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="profile.html"><i class="fa fa-fw fa-user"></i> Profile</a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<!--<a href="index.html" id="quickstart-sign-in"><i class="fa fa-fw fa-power-off"></i> Log Out</a>-->
+						<a href="https://open.spotify.com/settings/account" id="quickstart-sign-in"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!--
+	<div class="bs-docs-header" id="content" tabindex="-1"> 
+		<div class="container"> 
+			<h1>CSS</h1> 
+			<p>
+				Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.
+			</p> 
+		</div> 
+	</div>-->
+
+	<!-- First Container -->
+	<div class="container-fluid bg-1 text-center">
+	  <h1 class="margin">---Who Are We?---</h1>
+	  <img src="assets/cadence_logo.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="400" height="400">
+	  <p>Cadence is revolutionizing the music appearance. Our team searches for a new way to define music and find more music that satisfies your search for a more personalized music experience.</p>
+	</div>
+
+	<!-- Second Container -->
+	<div class="container-fluid bg-2 text-center">
+	  <h3 class="margin">What Does Cadence Do?</h3>
+	  <p>We pair with Spotify to use music added to your profile to generate more personalized playlists. </p>
+	</div>
+
+	<!-- Third Container (Grid) -->
+	<div class="container-fluid bg-3 text-center">    
+	  <h2 class="margin">Our Team</h2>
+	  <h4>Our team is composed of programmers of different skillsets, with a combination of frontend and backend experience:</h4><br>
+	  <div class="row">
+	    <div class="col-sm-4">
+	      <h2>Jessie Albarian<h2>
+	      <img src="assets/jessie.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+	      <p>Jessie is a designer and web/app developer who loves the outdoors and music. You'll normally find her programming her latest project at a local coffee shop.</p>
+	    </div>
+	    <div class="col-sm-4">
+	      <h2>Sophie Brande<h2>
+	      <img src="assets/sophie.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+	      <p>From Southern California, Sophie is a major computer science and her main focus is full stack web development as well as web design. She listens to an array of music from classical, jazz, instrumental hip hop, and various forms of electronic. Currently, Sophie's listening to  Coltrane and a lot of 80's music.</p>
+	    </div>
+	    <div class="col-sm-4">
+	      <h2>Spencer Hanson<h2>
+	      <img src="assets/spencer.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+	      <p>Spencer is a very logical, goal-oriented and focused on success. He has worked with computers his entire life and they are his main passion and area of interest.</p>
+	    </div>
+	    <div class="col-sm-4"> 
+	      <h2>Evan James<h2>
+	      <img src="assets/evan.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+	      <p>Evan is a human being hailing from New Hampshire. He enjoys bikes, plants, and an eclectic variety of music. A member of CU's Robotics Club and a volunteer at Radio1190, the intersection of music and computer science feels like home.</p>
+	    </div>
+	    <div class="col-sm-4"> 
+	      <h2>Carly Romig<h2>
+	      <img src="assets/carly.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+	      <p>Carly Romig has been coding since her freshman year of college. She enjoys photography and taking lengthy strolls through 300 lines of code.</p>
+	    </div>
+	  </div>
+	</div>
+	</div>
+
+	<!--
+
+		<h1>About Us<h1>
+		<a href="https://github.com/spencer-hanson/Cadence">Github:</a>
+		<h2> Bio</h2>
+		<p>
+		</p>
+	//	<img src="assets/carly.jpg" alt="team picture" />
+	-->
+	</body>
+</html>

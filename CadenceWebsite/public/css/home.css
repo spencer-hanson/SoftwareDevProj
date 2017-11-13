@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+#home-overlay-image {
+    display:block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: white solid 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#home-background-image {
+    width: 100%;
+    height: 20em;
+    background: url(../assets/profile_background.png) center center no-repeat;
+}
+
+
+.playlistBoxes {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.playlistName {
+    text-align: center;
+    color:white;
+    font-size: 29px;
+}
+
+.username {
+    text-align: center;
+}
+
+#albumSquare {
+    display: block;
+    margin: 0 auto;
+}
